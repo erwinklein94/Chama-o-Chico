@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chama o Chico | Reparos Residenciais em Santos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --amarelo: #ffce00;
+            --preto: #000000;
+            --cinza-escuro: #121212;
+            --branco: #ffffff;
+            --whatsapp: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--preto);
+            color: var(--branco);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--cinza-escuro);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--amarelo);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: var(--amarelo);
+            text-transform: uppercase;
+        }
+
+        .insta-link {
+            color: var(--branco);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .insta-link:hover {
+            color: var(--amarelo);
+        }
+
+        .hero {
+            padding: 40px 5%;
+            text-align: center;
+            background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Foto do Chico usando o link direto do PostImage */
+        .chico-img-arte {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--amarelo);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .contact-box {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+            width: 100%;
+            max-width: 300px;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .btn-wa {
+            background-color: var(--whatsapp);
+            color: white;
+        }
+
+        .btn-wa:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .servicos {
+            padding: 60px 5%;
+            background-color: var(--cinza-escuro);
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--amarelo);
+            margin-bottom: 40px;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .grid-servicos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--preto);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--amarelo);
+        }
+
+        .card h3 {
+            color: var(--amarelo);
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--amarelo);
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card ul { list-style: none; }
+
+        .card ul li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card ul li::before {
+            content: "•";
+            color: var(--amarelo);
+            font-weight: bold;
+        }
+
+        .sobre {
+            padding: 60px 5%;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: var(--cinza-escuro);
+            text-align: center;
+            padding: 40px 5%;
+            border-top: 1px solid #333;
+        }
+
+        .footer-logo {
+            color: var(--amarelo);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .chico-img-arte { max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Chama o Chico!</div>
+        <a href="https://www.instagram.com/chama_o_chico" target="_blank" class="insta-link">
+            <i class="fab fa-instagram"></i> @chama_o_chico
+        </a>
+    </header>
+
+    <section class="hero">
+        <img src="https://i.postimg.cc/d1SQDkvP/Whats-App-Image-2026-04-12-at-13-34-36.jpg" alt="Chama o Chico" class="chico-img-arte">
+        
+        <h1>Ih, deu problema?</h1>
+        <p>Para todo problema, uma solução! Pequenas instalações e reparos em Santos e Região. Confiança e Experiência em cada detalhe!</p>
+        
+        <div class="contact-box">
+            <a href="https://wa.me/5513997543030" class="btn btn-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> (13) 99754-3030
+            </a>
+            <a href="https://wa.me/5513991540854" class="btn btn-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> (13) 99154-0854
+            </a>
+        </div>
+    </section>
+
+    <section class="servicos">
+        <h2 class="section-title">O que o Chico faz:</h2>
+        
+        <div class="grid-servicos">
+            <div class="card">
+                <h3><i class="fas fa-bolt"></i> ELÉTRICA</h3>
+                <ul>
+                    <li>Instalação de chuveiro</li>
+                    <li>Resistência de chuveiro</li>
+                    <li>Tomadas ou Interruptores</li>
+                    <li>Instalação de ventilador de teto</li>
+                    <li>Luminárias, spots, arandelas e pendentes</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-faucet"></i> HIDRÁULICA</h3>
+                <ul>
+                    <li>Troca de sifão</li>
+                    <li>Instalação de torneira (comum ou elétrica)</li>
+                    <li>Reparo de hidra ou torneira</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-tools"></i> GERAL</h3>
+                <ul>
+                    <li>Varal de teto</li>
+                    <li>Ganchos</li>
+                    <li>Prateleiras</li>
+                    <li>Quadros</li>
+                    <li>E muito mais...</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <h2 class="section-title">Sobre o Chico</h2>
+        <p>Com vasta experiência como mecânico, caminhoneiro e profissional portuário, o Chico une o conhecimento técnico com a praticidade para cuidar da sua casa. Aposentado, dedica-se a pequenos consertos e instalações com honestidade, preço justo e capricho.</p>
+    </section>
+
+    <footer>
+        <div class="footer-logo">CHAMA O CHICO</div>
+        <p>Atendimento em Santos e Região</p>
+        <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Chama o Chico. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
